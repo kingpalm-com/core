@@ -12,7 +12,7 @@ final class Grouped {
 	 * @param array(string => mixed) $r
 	 * @return array(string => mixed)
 	 */
-	function afterModifyMeta(Sb $sb, $r) {return dfa_deep_set(
+	function afterModifyMeta(Sb $sb, $r) {return !isset($r[Sb::GROUP_GROUPED]) ? $r : dfa_deep_set(
 		$r, [Sb::GROUP_GROUPED, 'children', Sb::LINK_TYPE, 'arguments/data/config/pageSize'], 200
 	);}
 }
