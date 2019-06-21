@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<config
+	xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
+	xsi:noNamespaceSchemaLocation='urn:magento:framework:ObjectManager/etc/config.xsd'
+>
+<!-- 2019-06-21
+"Implement an ability to move a grouped product variation to the list's beginning":
+https://github.com/kingpalm-com/core/issues/1 -->
+	<type name='Magento\GroupedProduct\Ui\DataProvider\Product\Form\Modifier\Grouped'>
+		<plugin
+			name='KingPalm\Core\Plugin\GroupedProduct\Ui\DataProvider\Product\Form\Modifier\Grouped'
+			type='KingPalm\Core\Plugin\GroupedProduct\Ui\DataProvider\Product\Form\Modifier\Grouped'
+		/>
+	</type>
+</config>
