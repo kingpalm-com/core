@@ -7,8 +7,17 @@ rm -rf composer.lock
 composer clear-cache
 composer require kingpalm/core:*
 bin/magento setup:upgrade
-rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
-rm -rf pub/static/* && bin/magento setup:static-content:deploy -f en_US --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy -f en_US --area frontend --theme Magento/kingpalm
+rm -rf var/di var/generation generated/code
+bin/magento setup:di:compile
+rm -rf pub/static/*
+bin/magento setup:static-content:deploy \
+	--area adminhtml \
+	--theme Magento/backend \
+	-f en_US
+bin/magento setup:static-content:deploy \
+	--area frontend \
+	--theme Magento/kingpalm \
+	-f en_US
 bin/magento maintenance:disable
 bin/magento cache:enable
 ```
@@ -21,8 +30,17 @@ rm -rf composer.lock
 composer clear-cache
 composer require kingpalm/core:*
 bin/magento setup:upgrade
-rm -rf var/di var/generation generated/code && bin/magento setup:di:compile
-rm -rf pub/static/* && bin/magento setup:static-content:deploy -f en_US --area adminhtml --theme Magento/backend && bin/magento setup:static-content:deploy -f en_US --area frontend --theme Magento/kingpalm
+rm -rf var/di var/generation generated/code
+bin/magento setup:di:compile
+rm -rf pub/static/*
+bin/magento setup:static-content:deploy \
+	--area adminhtml \
+	--theme Magento/backend \
+	-f en_US
+bin/magento setup:static-content:deploy \
+	--area frontend \
+	--theme Magento/kingpalm \
+	-f en_US
 bin/magento maintenance:disable
 bin/magento cache:enable
 ```
