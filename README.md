@@ -3,6 +3,7 @@ A custom module for [kingpalm.com](https://kingpalm.com).
 ## How to install
 ```
 bin/magento maintenance:enable
+rm -rf composer.lock
 composer clear-cache
 composer require kingpalm/core:*
 bin/magento setup:upgrade
