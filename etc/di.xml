@@ -15,4 +15,14 @@ https://github.com/kingpalm-com/core/issues/33 -->
 			type='KingPalm\Core\Plugin\Aitoc\OrdersExportImport\Model\Processor\Config\ExportConfigMapper'
 		/>
 	</type>
+<!-- 2019-10-14
+«Call to a member function getResource() on array
+at app/code/Aitoc/OrdersExportImport/Model/Processor/EntityType/AbstractEntity.php:179»:
+https://github.com/kingpalm-com/core/issues/38 -->
+	<type name='Aitoc\OrdersExportImport\Model\Processor\EntityType\AbstractEntity'>
+		<plugin
+			name='KingPalm\Core\Plugin\Aitoc\OrdersExportImport\Model\Processor\EntityType\AbstractEntity'
+			type='KingPalm\Core\Plugin\Aitoc\OrdersExportImport\Model\Processor\EntityType\AbstractEntity'
+		/>
+	</type>
 </config>
