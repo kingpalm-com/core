@@ -1,0 +1,12 @@
+// 2019-10-18
+.df-theme-market_child {
+	// 2019-10-18
+	// The «Categories» menu: app/design/frontend/Sm/market/Magento_Theme/templates/html/header-style/header-11.phtml
+	.sidebar-megamenu {@media (min-width: 768px) {display: none;}}
+	.main-megamenu {
+		// 2019-10-18 As I have disabled the `link-right-header` block, I allow the primary menu to have the full width.
+		@media (min-width: 768px) {flex: 0 0 100%; max-width: 100%;}
+		// 2019-10-18 The theme uses the `{margin-left: -30px}` rule.
+		.sm_megamenu_wrapper_horizontal_menu {@media (min-width: 768px) {margin-left:  2em !important;}}
+	}
+}
