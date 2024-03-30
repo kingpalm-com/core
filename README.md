@@ -1,4 +1,4 @@
-A custom module for [kingpalm.com](https://kingpalm.com).
+A custom module for [kingpalm.com](https://kingpalm.com) (Magento 2).
 
 ## How to install
 ```
